@@ -1,4 +1,6 @@
-﻿namespace LeetCodeSolutions
+﻿using System;
+
+namespace LeetCodeSolutions
 {
     internal class Program
     {
@@ -6,10 +8,10 @@
         {
             int[] array = new int[] { 1, 7, 3, 6, 5, 6 };
 
-            for (int i = 0; i < array.Length; i++)
-            {
+            var pivot = new FindPivotIndex();
 
-            }
+
+            Console.WriteLine(pivot.PivotIndex(array));
 
 
 
