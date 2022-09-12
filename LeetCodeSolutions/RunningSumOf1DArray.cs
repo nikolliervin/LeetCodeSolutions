@@ -10,7 +10,7 @@ namespace LeetCodeSolutions
             array[0] = nums[0];
             for (int i = 1; i < nums.Length; i++)
             {
-                array[i] = array[i - 1] + nums[i];
+                array[i] = nums[i] + array[i - 1];
 
             }
             for (int i = 0; i < array.Length; i++)
